@@ -112,11 +112,11 @@ function renderActiveTasks(){
 }
 
 function renderTasks(){
+    $taskList.innerHTML = '';
     if(tasks.length === 0)  {
         show($emptyaTaskListMessage)
     }else{
         hide($emptyaTaskListMessage)
-        $taskList.innerHTML = '';
         tasks.map(function(element){ $taskList.insertAdjacentHTML('beforeend', showTemplate(element))})
     }
 }
