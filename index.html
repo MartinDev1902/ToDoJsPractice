@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" style="background-image: url('img/bg-desktop-dark.jpg');">
+        <div class="header-content">
+            <h1>Todo</h1>
+            <div class="input-block">
+                <input type="text" id="inputTask">
+                <button id="addTask">Add</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="todo-list">
+        <div class="todo-list-content">
+            <div class="todo-items" id="todoItems">
+                
+            </div>
+           
+
+            <p class="empty-tasklist hide" id="emptyTaskList">You don't have tasks</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <li id="showAllTasks">All</li>
+            <li id="showActiveTasks">Active</li>
+            <li id="showCompletedTasks">Completed</li>
+            <li id="clearCompleted">Clear completed</li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

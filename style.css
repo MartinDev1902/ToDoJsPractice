@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(235, 21%, 11%);
+    font-size: 18px;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header{
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-block{
+    background-color: hsl(235, 21%, 11%);
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-block input{
+    background-color: transparent;
+    border: none;
+    caret-color: hsl(234, 100%, 45%);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    width: 300px;
+}
+
+.input-block input:focus{
+    outline: none;
+}
+
+.input-block button{
+    background-color: transparent;
+    border: none;
+    color: hsl(234, 100%, 45%);
+    font-weight: 700;
+    font-size: 18px;
+}
+.input-block button:hover{
+    cursor: pointer;
+}
+.input-block button:focus{
+    outline: none;
+}
+
+
+.todo-list{
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px;
+    padding-bottom: 85px;
+}
+.todo-list-content{
+    width: 400px;
+}
+
+.todo-list-content .todo-element{
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+    padding: 15px 25px;
+    position: relative;    
+}
+.todo-list-content .todo-element .checkbox{
+    margin-right: 15px;
+}
+.todo-list-content .todo-element .remove-element{
+    position: absolute;
+    right: 25px;   
+}
+.empty-tasklist{
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(235, 21%, 11%);
+}
+
+.footer ul li{
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.footer ul li:last-child{
+    margin-right: 0;
+}
+
+.footer ul li {
+    color: #ffffff;
+    transition: all 0.4s ease;
+}
+
+.footer ul li:hover{
+    cursor: pointer;
+    color: hsl(234, 100%, 45%);
+}
+
+.hide{
+    display: none !important;
+}
